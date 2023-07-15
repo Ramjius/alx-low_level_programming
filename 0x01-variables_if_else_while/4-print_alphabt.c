@@ -10,7 +10,6 @@ int main(void)
 
 {
 	char low, e, q;
-	char up = 65;
 
 	e = 101;
 	q = 113;
@@ -19,10 +18,6 @@ int main(void)
 	{
 	if (low != e && low != q)
 	putchar(low);
-	}
-	for (; up < 91; up++)
-	{
-	putchar(up);
 	}
 	putchar('\n');
 	return (0);

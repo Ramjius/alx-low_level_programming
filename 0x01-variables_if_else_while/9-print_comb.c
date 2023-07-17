@@ -10,18 +10,17 @@ int main(void)
 	int n = 48;
 
 	/* For loop to generate characters*/
-	for (n < 58)
+	for (; n < 58; n++)
 	{
-	/* Display result digits*/
-		putchar(n);
-		if (n != 57)
+	putchar(n);
+
+	/* For loop to add comma and space */
+	if (n < 57)
+	{
 		putchar(',');
 		putchar(' ');
-		n++;
 	}
-	else
-	{
-	break;
+
 	}
 	putchar('\n');
 	return (0);

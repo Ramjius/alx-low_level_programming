@@ -7,15 +7,21 @@
 int main(void)
 {
 	/* Define temporary variables */
-	int n;
+	int n = 48;
 
 	/* For loop to generate characters*/
-	for (n = 48; n <= 57; n++)
+	for (n < 58)
 	{
 	/* Display result digits*/
 		putchar(n);
+		if (n != 57)
 		putchar(',');
 		putchar(' ');
+		n++;
+	}
+	else
+	{
+	break;
 	}
 	putchar('\n');
 	return (0);

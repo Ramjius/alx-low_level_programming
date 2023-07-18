@@ -10,7 +10,7 @@ int main(void)
 	int x = '0';
 	int y = '0';
 
-	while (x <= '9')
+	while (x <= '8')
 	{
 		while (y <= '9')
 		{
@@ -20,7 +20,7 @@ int main(void)
 				putchar(y);
 				if (x == '8' && y == '9')
 				{
-				putchar('\n');
+					putchar('\n');
 				}
 					else
 					{

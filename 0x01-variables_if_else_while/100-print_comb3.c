@@ -5,33 +5,25 @@
 * Return: 0 Always (Success)
 */
 
-int main(void)
+int main()
 {
-	int x = '0';
-	int y = '0';
+	int i;
+	int j;
 
-	while (x < '9')
-	{
-		while (y <= '9')
+	for (i = 0; i <= 9; i++) {
+		for (j = i + 1; j <= 9; j++) {
+		putchar(i + '0');
+		putchar(j + '0');
+		if (i != 8 || j != 9) {
+			putchar(',');
+			putchar(' ');
+            	}
+		else
 		{
-			if (!(x > y) || x == y)
-			{
-				putchar(x);
-				putchar(y);
-				if (x == '8' && y == '9')
-				{
-					putchar('\n');
-				}
-				else
-				{
-				putchar(',');
-				putchar (' ');
-				}
-			}
-			y++;
+		putchar('\n');
 		}
-		y = '0';
-		x++;
-	}
-	return (0);
+        }
+    }
+
+    return 0;
 }

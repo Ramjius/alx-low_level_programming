@@ -24,16 +24,15 @@ void print_number(int n)
 {
 	if (n == 0)
 	{
-	_putchar('0');
+		_putchar('0');
 	}
-	else if (n < 0)
-	{
-	_putchar('-');
-	print_positive_number(-n);
-	}
-	else
-	{
-	print_positive_number(n);
-	}
-_putchar('\n');
+		else if (n < 0)
+		{
+			_putchar('-');
+			print_positive_number(-n);
+		}
+		else
+		{
+			print_positive_number(n);
+		}
 }

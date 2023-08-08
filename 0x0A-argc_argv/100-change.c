@@ -3,12 +3,10 @@
 #include "main.h"
 
 /**
-* main - prints minimum no. of coins to make change
-* to an amount of money
-*
+* main - prints min no. of coins to make change to an amount of money
 * @argc: number of args
 * @argv: args
-* Retrn: 0 success 1 error
+* Return: 0 success 1 error
 */
 
 int main(int argc, char *argv[])

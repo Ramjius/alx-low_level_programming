@@ -2,14 +2,14 @@
 #include <stdlib.h>
 
 /**
-* free grid - frees grid 
+* free_grid - frees grid
 * @grid: grid
 * @height: height
 *
 * Return: NULL
 */
 
-int **alloc_grid(int width, int height)
+void free_grid(int **grid, int height)
 {
 	int i;
 

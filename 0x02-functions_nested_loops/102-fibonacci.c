@@ -15,12 +15,8 @@ int main(void)
 	{
 		if (i == 0)
 			printf("%ld", j);
-			printf(",");
-			printf(" ");
 		else if (i == 1)
 			printf("%ld", k);
-			printf(",");
-			printf(" ");
 		else
 		{
 			k += j;

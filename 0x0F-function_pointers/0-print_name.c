@@ -3,18 +3,15 @@
 
 /**
 * print_name - prints name
-* @name: pointer to variable
-* @f: pointer to function taking char pointer as argument
+* @name: string
+* @f: function pointer
+* Return: NULL
 */
 
 void print_name(char *name, void (*f)(char *))
 {
-	if (name != NULL && f != NULL)
-	{
+	if (name == NULL || f == NULL)
+		return;
+
 	f(name);
-	}
-	else
-	{
-	return;
-	}
 }

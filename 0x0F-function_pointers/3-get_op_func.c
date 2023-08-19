@@ -1,15 +1,17 @@
-#include "calc.h"
+#include "3-calc.h"
+#include <stdlib.h>
 
 /**
+* get_op_func - selects which operator to use
+* @s: operator arg
 *
-*
-*
-*
+* Return: pointer to function related to operator
 */
 
 int (*get_op_func(char *s))(int, int)
 {
-	op_t ops[] = 
+	op_t ops[] =
+
 	{
 	{"+", op_add},
 	{"-", op_sub},
@@ -19,12 +21,10 @@ int (*get_op_func(char *s))(int, int)
 	{NULL, NULL}
 	};
 
-	int i;
+	int i = 0;
 
-	s = argv;
+	while (ops[i].op != NULL && *(ops[i].op) != *s)
+		i++;
 
-	if (s != '+', '-','*','/')
-		return (NULL);
-
-	
+	return (ops[i].f);
 }

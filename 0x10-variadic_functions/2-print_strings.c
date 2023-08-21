@@ -21,7 +21,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		mystr = var_arg(rope, char *);
+		mystr = va_arg(rope, char *);
 
 		if (mystr == NULL)
 			printf("nil");

@@ -10,17 +10,17 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
-	va_list ap;
-	unsigned int j, sum = 0;
+	va_list values;
+	unsigned int j, total = 0;
 
-	va_start(ap, n);
+	va_start(values, n);
 
-	for (j = 9; j < n; j++)
+	for (j = 0; j < n; j++)
 	{
-		sum += va_arg(ap, int)
+		total += va_arg(values, int);
 	}
 
-	va_end(ap);
+	va_end(values);
 
-	return (sum);
+	return (total);
 }

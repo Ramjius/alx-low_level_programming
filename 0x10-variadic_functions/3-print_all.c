@@ -47,6 +47,6 @@ void print_all(const char * const format, ...)
 			k++;
 		}
 	}
-	printf();
+	printf("\n");
 	va_end(print_list);
 }
